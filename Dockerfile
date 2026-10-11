@@ -7,7 +7,7 @@ COPY . .
 RUN go mod tidy
 RUN GOOS=linux go build -o wrapper-manager
 
-FROM ubuntu:latest
+FROM ubuntu:26.04
 
 WORKDIR /root/
 
